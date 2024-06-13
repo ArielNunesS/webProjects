@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page 1</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div id="fundoCabecalho">
+<hr id="linhaCabecalho">
+    <div id="cabecalho">
+        <button id="botaoCadastro" class="botao"><strong>Cadastro</strong></button>
+        <button id="botaoLogin" class="botao"><strong>Login</strong></button>
+
+    </div>
+       
+    <div id="containerMenuInicio">
+        <button id="botaoInicio" class="botao"><strong><span id="textoInicio">Início</span> <div id="seta"></div></strong></button>
+            <ul id="listaInicio" class="lista" style="display: none">
+                <li><button class="botaoLista">Item 1</button></li>
+                <li><button class="botaoLista">Item 2</button></li>
+                <li><button class="botaoLista">Item 3 menu</button></li>
+                <li><button class="botaoLista">Item 4 menu inicio</button></li>
+            </ul>
+    </div>
+    
+    <div id="containerMenuProdutos">
+        <button id="botaoShop" class="botao"><strong><span id="textoProdutos">Shop</span> <div id="seta"></div></strong></button>
+        <ul id="listaShop" class="lista" style="display: none">
+            <li><button class="botaoLista">Promoções</button></li>
+            <li><button class="botaoLista">Camisetas</button></li>
+            <li><button class="botaoLista">Casacos</button></li>
+            <li><button class="botaoLista">Calças</button></li>
+            <li><button class="botaoLista">Bermudas</button></li>
+            <li><button class="botaoLista">Calçados</button></li>
+            <li><button class="botaoLista">Acessórios</button></li>
+        </ul>
+    </div>
+    
+    <div id="formularioCadastro" style="display: none;">
+        <h1 id="tituloCadastro"><strong>Cadastro</strong></h1>
+        <br> <br> <br>
+            <label for="usernameCadastro" class="labelCadastro">Nome:</label>
+                <input type="text" id="usernameCadastro" class="input"><br>
+            
+            <label for="emailCadastro" class="labelCadastro">Email:</label>    
+                <input type="email" id="emailCadastro" class="input"><br>
+            
+            <label for="senhaCadastro" class="labelCadastro">Senha:</label>
+                <input type="password" id="senhaCadastro" class="input"/><strong>(min 8 dígitos)</strong><br>
+
+          <button id="confirmarCadastro"><strong>Confirmar Cadastro</strong></button>
+    </div>
+
+    <div id="formularioLogin" style="display: none;"> 
+        <h1 id="tituloLogin"><strong>Login</strong></h1>
+        <label for="emailLogin" class="labelLogin">Email:</label>
+            <input type="email" id="emailLogin" class="input"><br>
+
+        <label for="senhaLogin" class="labelLogin">Senha:</label>
+            <input type="password" id="senhaLogin" class="input"/><br>
+
+            <button id="confirmarLogin"><strong>Confirmar Login</strong></button>
+    </div>
+
+</div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

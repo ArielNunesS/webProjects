@@ -1,0 +1,191 @@
+#fundoCabecalho {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 85px;
+    background-color: cornflowerblue;
+}
+
+#linhaCabecalho {
+    margin-top: 85px;
+}
+#botaoCadastro {
+    left: 85%;;
+}
+#botaoLogin {
+    left: 92%;
+}
+
+#containerMenuInicio {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 25%;
+}
+
+#containerMenuProdutos {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 33%;
+}
+#botaoInicio {
+    left: 25%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    position: absolute;
+}
+
+#botaoShop {
+    left: 33%;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 0px;
+    position: absolute;
+}
+
+#textoInicio {
+    position: absolute;
+    left: 14px;
+    top: 22px;
+}
+#textoProdutos {
+    position: absolute;
+    left: 14px;
+    top: 22px;
+}
+#seta {
+    position: absolute;
+    color: white;
+    padding: 6px;
+    box-shadow: 2px -2px 0 1px #ffffff inset;
+    border: solid transparent;
+    border-width: 0 0 2px 2px;
+    right: 12px;
+    top: 22px;
+    transform: rotate(-45deg);
+}
+
+/* Listas (menus) */
+
+.lista {
+    list-style-type: none;
+    padding: 0;
+    display: none;
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 100%;
+    transition: opacity 0.5s ease-in-out;
+}
+   .lista li {
+        border-bottom: 1px solid #ccc;
+}   .lista li:last-child {
+        border-bottom: none;
+}   .lista button {
+        text-align: left;
+        font-family: "Helvetica";
+        font-weight: bold;
+        font-size: 12px;
+        padding: 15px 15px;
+        width: 100%;
+        cursor: pointer;
+        border: none;
+}
+#listaInicio {
+    width: 135px;
+}
+#listaShop {
+    width: 200px;
+}
+
+#formularioCadastro {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+#formularioLogin {
+    position: absolute;
+    margin-top: 100px;
+    margin-left: 50px;
+}
+
+/* Fontes dos Inputs */
+
+
+.labelCadastro {
+    font-family: sans-serif;
+}
+#tituloCadastro {
+    margin-bottom: -25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+#tituloLogin {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    }
+#senhaCadastro {
+    margin-bottom: 15px;
+    }
+#senhaLogin {
+    margin-bottom: 15px;
+    }
+
+
+
+/* Botões */
+
+.input {
+    height: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    margin-bottom: 3px;
+}
+
+.botao {
+    cursor: pointer;
+    border: none;
+    padding: 15px, 15px;
+    margin-top: 10px;
+    position: absolute;
+    font-size: 15px;
+    width: 90px;
+    height: 60px;
+    color: #FFF;
+    transition: all 0.5s;
+    content: '';
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(255,255,255,0.15);
+    transition: all 0.35s;
+}
+.botao::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    transition: all 0.35s;
+    border: 1px solid rgba(255,255,255,0.5);
+    transform: scale(1.3,1.3);
+}
+.botao:hover::after {
+    opacity: 1;
+    transform: scale(1,1);
+}
+
+.botaoLista {
+    background-color: #FFF;
+}
+
+.botaoLista:hover {
+    background-color: rgb(154, 175, 245);
+}
